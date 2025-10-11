@@ -2,6 +2,7 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import VueKonva from 'vue-konva'
 
 import App from './App.vue'
 import router from './router'
@@ -10,5 +11,7 @@ const app = createApp(App)
 
 app.use(createPinia())
 app.use(router)
+app.use(VueKonva)
+console.log('VueKonva installed:', app._context.components)
 
 app.mount('#app')
