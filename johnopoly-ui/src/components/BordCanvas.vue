@@ -398,19 +398,20 @@ onMounted(() => {
               width: 25,
               height: 20,
               fill: '#00aa00',
-              stroke: '#000',
-              strokeWidth: 1.5,
+              stroke: '#006b00',
+              strokeWidth: 0.5,
             }"
           />
           <!-- Roof -->
-          <v-rect
+          <v-regular-polygon
             :config="{
-              x: -17.5,
-              y: -20,
-              width: 30,
-              height: 12,
+              x: -2.5,
+              y: -12,
+              sides: 3,
+              radius: 20,
+              scaleY: 0.25,
               fill: '#00aa00',
-              stroke: '#000',
+              stroke: '#006b00',
               strokeWidth: 1.5,
             }"
           />
