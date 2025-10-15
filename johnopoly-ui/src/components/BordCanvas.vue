@@ -159,24 +159,36 @@ const handleDragEnd = (e: Konva.KonvaEventObject<DragEvent>) => {
   // Update token position
   const tokenIndex = tokens.value.findIndex((t) => t.id === id)
   if (tokenIndex !== -1) {
-    tokens.value[tokenIndex].x = newX
-    tokens.value[tokenIndex].y = newY
+    const currentToken = tokens.value[tokenIndex]
+    if (currentToken === undefined) {
+      return
+    }
+    currentToken.x = newX
+    currentToken.y = newY
     return
   }
 
   // Update house position
   const houseIndex = houses.value.findIndex((h) => h.id === id)
   if (houseIndex !== -1) {
-    houses.value[houseIndex].x = newX
-    houses.value[houseIndex].y = newY
+    const currentHouse = houses.value[houseIndex]
+    if (currentHouse === undefined) {
+      return
+    }
+    currentHouse.x = newX
+    currentHouse.y = newY
     return
   }
 
   // Update hotel position
   const hotelIndex = hotels.value.findIndex((h) => h.id === id)
   if (hotelIndex !== -1) {
-    hotels.value[hotelIndex].x = newX
-    hotels.value[hotelIndex].y = newY
+    const currentHotel = hotels.value[hotelIndex]
+    if (currentHotel === undefined) {
+      return
+    }
+    currentHotel.x = newX
+    currentHotel.y = newY
   }
 }
 
