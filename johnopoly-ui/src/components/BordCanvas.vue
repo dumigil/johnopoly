@@ -414,6 +414,17 @@ onMounted(() => {
               strokeWidth: 0.5,
             }"
           />
+          <!-- Windows -->
+          <v-rect
+            :config="{ x: -12, y: -8, width: 6, height: 6, fill: '#006b00', cornerRadius: 1 }"
+          />
+          <v-rect
+            :config="{ x: 0, y: -8, width: 6, height: 6, fill: '#006b00', cornerRadius: 1 }"
+          />
+          <v-rect
+            :config="{ x: -12, y: 2, width: 6, height: 6, fill: '#006b00', cornerRadius: 1 }"
+          />
+          <v-rect :config="{ x: 0, y: 2, width: 6, height: 6, fill: '#006b00', cornerRadius: 1 }" />
           <!-- Roof -->
           <v-regular-polygon
             :config="{
@@ -447,7 +458,7 @@ onMounted(() => {
             :config="{
               x: -20,
               y: -15,
-              width: 40,
+              width: 30,
               height: 30,
               fill: '#cc0000',
               stroke: '#A60000',
@@ -455,18 +466,24 @@ onMounted(() => {
             }"
           />
           <!-- Windows -->
-          <v-rect :config="{ x: -15, y: -10, width: 8, height: 8, fill: '#A60000' }" />
-          <v-rect :config="{ x: -3, y: -10, width: 8, height: 8, fill: '#A60000' }" />
-          <v-rect :config="{ x: 9, y: -10, width: 8, height: 8, fill: '#A60000' }" />
-          <v-rect :config="{ x: -15, y: 2, width: 8, height: 8, fill: '#A60000' }" />
-          <v-rect :config="{ x: -3, y: 2, width: 8, height: 8, fill: '#A60000' }" />
-          <v-rect :config="{ x: 9, y: 2, width: 8, height: 8, fill: '#A60000' }" />
+          <v-rect
+            :config="{ x: -15, y: -10, width: 8, height: 8, fill: '#A60000', cornerRadius: 1 }"
+          />
+          <v-rect
+            :config="{ x: -3, y: -10, width: 8, height: 8, fill: '#A60000', cornerRadius: 1 }"
+          />
+          <v-rect
+            :config="{ x: -15, y: 2, width: 8, height: 8, fill: '#A60000', cornerRadius: 1 }"
+          />
+          <v-rect
+            :config="{ x: -3, y: 2, width: 8, height: 8, fill: '#A60000', cornerRadius: 1 }"
+          />
           <!-- Roof -->
           <v-regular-polygon
             :config="{
-              x: 0,
+              x: -5,
               y: -19,
-              radius: 30,
+              radius: 25,
               sides: 3,
               scaleY: 0.3,
               fill: '#cc0000',
